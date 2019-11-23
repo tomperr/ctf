@@ -40,6 +40,8 @@ After a taking a look at it, it seems to be a basic Drupal site. I didn't find a
 
 Big deal! Exploit called 'Drupageddon' seems cool to get a backdoor. I will use Metasploit to use this one.
 
+## Getting into shell
+
 ![Drupageddon](screenshots/5.jpg)
 
 It works! Now we have a meterpreter (a particular shell). As I hate it, I do some tricks to gain a fully interactive TTY
@@ -48,6 +50,8 @@ It works! Now we have a meterpreter (a particular shell). As I hate it, I do som
 
 First thing we see, is that we're logged as www-data user, which is web server user. We should have some perms to do bad stuff on the machine.
 
+## Discovering installation files
+
 I list files in current folder, and I find 'flag1.txt' among all the files.
 
 ![Flag1](screenshots/7.jpg)
@@ -55,6 +59,8 @@ I list files in current folder, and I find 'flag1.txt' among all the files.
 Drupal settings are stored in sites/default/settings.php. We find the second flag, with database credentials. I'll keep thoses on a notepad.
 
 We also discover that this site use mysql.
+
+## Mining database
 
 ![Drupal Settings](screenshots/8.jpg)
 
@@ -68,6 +74,8 @@ In 'node' table, I find a page called "flag3". Content of this flag is stored in
 
 ![Mysql node](screenshots/10.jpg)
 ![Mysql node content](screenshots/11.jpg)
+
+## Accessing /root
 
 The capitalized word 'FIND' puts us on the track.
 First, let's see if we can access /root folder
