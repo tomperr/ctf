@@ -31,7 +31,7 @@ As 80 port is open, let's check nikto command result.
 
 ![Nikto](screenshots/3.jpg)
 
-Now we now that the website hosted on this machine is running Drupal 7
+Now we now that the website hosted on this machine is running Drupal 7.
 Let's check this on a web browser.
 
 ![Homepage](screenshots/4.jpg)
@@ -60,7 +60,7 @@ We also discover that this site use mysql.
 
 Let's connect to mysql database to find more informations.
 
-![Mysql](sreenshots/9.jpg)
+![Mysql](screenshots/9.jpg)
 
 Drupal has 80 tables in database, so I google some of them to know which ones could be interesting. 'users' table contains passwords' hash. I'll try to break them if I don't find any other route.
 
