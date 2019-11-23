@@ -1,2 +1,2 @@
 # ctf
-All the CTF write-ups I've done
+All the CTF write-ups I've written
