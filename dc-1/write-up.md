@@ -57,12 +57,11 @@ I list files in current folder, and I find 'flag1.txt' among all the files.
 ![Flag1](screenshots/7.jpg)
 
 Drupal settings are stored in sites/default/settings.php. We find the second flag, with database credentials. I'll keep thoses on a notepad.
-
 We also discover that this site use mysql.
 
-## Mining database
-
 ![Drupal Settings](screenshots/8.jpg)
+
+## Mining database
 
 Let's connect to mysql database to find more informations.
 
