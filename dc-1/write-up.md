@@ -36,7 +36,7 @@ Let's check this on a web browser.
 
 ![Homepage](screenshots/4.jpg)
 
-After a taking a look at it, it seems to be a basic Drupal site. I din't find any clue while browsing on pages. I won't try basic exploit like SQL injection in login / register form, Drupal is not that bad. The easiest thing is to search an exploit on the internet.
+After a taking a look at it, it seems to be a basic Drupal site. I didn't find any clue while browsing on pages. I won't try basic exploit like SQL injection in login / register form, Drupal is not that bad. The easiest thing is to search an exploit on the internet.
 
 Big deal! Exploit called 'Drupageddon' seems cool to get a backdoor. I will use Metasploit to use this one.
 
@@ -46,7 +46,7 @@ It works! Now we have a meterpreter (a particular shell). As I hate it, I do som
 
 ![Meterpreter](screenshots/6.jpg)
 
-First thing we see, is that we're logged with www-data user, which is web server user. We should have some perms to do bad stuff on the machine.
+First thing we see, is that we're logged as www-data user, which is web server user. We should have some perms to do bad stuff on the machine.
 
 I list files in current folder, and I find 'flag1.txt' among all the files.
 
@@ -84,7 +84,7 @@ We can use 'find' again, with an optional command to print this file.
 
 ![Final flag](screenshots/14.jpg)
 
-Finally we find it! We have the last flag, and also an root access by using 'find' command.
+Finally we find it! We have the last flag, and also root access by using 'find' command.
 OWNED.
 
  
