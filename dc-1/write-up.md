@@ -85,7 +85,7 @@ Of course we don't have permissions. We can also check with find command (becaus
 
 ![find root](screenshots/13.jpg)
 
-Cool! It seems with have root permission by using find command.
+Cool! It seems we have root permission by using find command.
 Among root files, /root/thefinalflag.txt is what we're are looking for.
 We can use 'find' again, with an optional command to print this file.
 
@@ -93,6 +93,13 @@ We can use 'find' again, with an optional command to print this file.
 
 Finally we find it! We have the last flag, and also root access by using 'find' command.
 OWNED.
+
+## EXTRA
+
+It's possible to be logged as root by using
+```
+find /root -exec "/bin/sh" {}\;
+```
 
  
 
